@@ -1,0 +1,28 @@
+Reference, Quantity, Value, Footprint, Datasheet, Description, Package ID, Manufacturer Name, Manufacturer Part Number, DTM P/N, Characteristics, Supplier, Critical, Notes, Alt Manufacturer Name, Alt Manufacturer Partnumber
+BT1 ,1,3V,,
+C1 ,1,1nF,,,,0805,,,,50V, X7R,,,,,
+C10 ,1,22uF,,,,,,,,Tantalum, ESR 0.3-22Ohm, 10V,,,,,
+C2 C3 C6 ,3,2.2uF,,,,,Samxon,EKM225M2GF8,,400V, Ecap, 105'C 2000h,,,,Shelcon,SHG2G2R2M-06311
+C4 ,1,22nF,,,,0805,,,,50V,,,,,
+C5 C9 ,2,100nF,,,,0805,,,,50V,,,,,
+C7 ,1,150nF,,,,0805,,,,50V,,,,,
+C8 ,1,100uF,,,,THD,Samxon,EKM107M1EF6.3,,25V, Ecap, 105'C 2000h, 6.3x11mm 159mArms,,,,,
+D1 ,1,SM2000,,,Rectifier,DO213AB,Diotec,SM2000,25150033-00,1A, 2000V,,,,,
+D2 ,1,BAS32,,
+D3 D4 ,2,US1MHE3/61T,,,Ultra fast rectifier,SMA,Vishay,US1MHE3_A/H,,1000V,,,,,
+FB1 ,1,1mH,,,Input filter choke,THD,Epcos,,36940045-00,,,,,Ease House,DRWW3x10-102K-B
+J1 ,1,RJ45,,,,,Optical Utility Meter LED Pulse Sensor,,,,,,https://openenergymonitor.org/emon/opticalpulsesensor,,
+K1 ,1,RELAY_1RT,,
+L1 ,1,680uH,,,Power Inductor,THD,FengHua,PIN1112-681KB,36920024-00,Mic:0.5A,,,,Coilcraft,RFB0810-681L
+P1 P2 P3 P4 ,4,CONN_01X01,,
+P5 ,1,DIL20,,
+Q1 ,1,Q_PMOS_DGS,,
+Q2 Q3 ,2,BC849,SOT-23,
+R1 R2 R3 ,3,330k,,https://industrial.panasonic.com/ww/products/resistors/chip-resistors/chip-resistors/anti-sulfurated-thick-film-chip-resistors/ERJS1DF3303U,RES SMD 330K OHM 1% 3/4W 2010,2010M,Panasonic Electronic Components,ERJ-S1DF3303U,,1%, 3/4W,DigiKey, ANY,X,,,
+R10 ,1,1k,,,,0805,,,,1%,,,,,
+R11 ,1,33k,,,,0805,,,,1%,,,,,
+R12 R13 R14 R4 R5 R7 R8 ,7,10k,,,,0805,,,,1%,,,,,
+R6 ,1,39R,,,Wirewound resistor 1W,THD,Yageo,FKN2WSJT-52-39R,,1W,Mobicon,X,Safety,FirstOhm,FGE101JTK40039RTB
+R9 ,1,NM,,,,0805,,,,1%,,,NM,,
+U1 ,1,Viper06,MODULE,DOCUMENTATION,SMPS Regulator,SSO10,ST,VIPER06HSTR,25035268-00,,,,,,
+U2 ,1,AMS1117,,,,SOT-223,Advanced Monolithic Systems,AMS1117-3.3,,Fixed 3.3V, 1A,,,,,
