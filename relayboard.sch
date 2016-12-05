@@ -43,12 +43,12 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Pulse, Relay and mains detect board"
-Date ""
+Date "2016-12-05"
 Rev "0.1"
 Comp "Sensors Unleashed"
-Comment1 "Count pulses via a RJ45 input"
-Comment2 "Detect mains on/off"
-Comment3 "Battery switch over if mains dissapears"
+Comment1 "Count pulses via a RJ45 input, Switch anything with a relay"
+Comment2 "Detect mains on/off, use a fallback battery if battery is lost to tx statux"
+Comment3 "Store configuration and measurement in an external i2c eeprom"
 Comment4 "If run on mains, a relay can switch"
 $EndDescr
 $Comp
@@ -264,11 +264,14 @@ P 4900 3850
 F 0 "D1" H 4900 3950 50  0000 C CNN
 F 1 "BAS321" H 4900 3750 50  0000 C CNN
 F 2 "Diodes_SMD:SOD-323" H 4900 3850 50  0001 C CNN
-F 3 "" H 4900 3850 50  0000 C CNN
-F 4 "Fast Recovery Rectifiers" H 4900 3850 60  0001 C CNN "Description"
-F 5 "SOD-323" H 4900 3850 60  0001 C CNN "Package ID"
-F 6 "NXP Semiconductors" H 4900 3850 60  0001 C CNN "Manufacturer Name"
-F 7 "BAS321,115" H 4900 3850 60  0001 C CNN "Manufacturer Part Number"
+F 3 "http://www.nxp.com/documents/data_sheet/BAS321.pdf" H 4900 3850 50  0001 C CNN
+F 4 "Vr=200V, Io=250mA, Vf=1.25V@200mA" H 4900 3850 60  0001 C CNN "Characteristics"
+F 5 "Fast Recovery Rectifiers" H 4900 3850 60  0001 C CNN "Description"
+F 6 "SOD-323" H 4900 3850 60  0001 C CNN "Package ID"
+F 7 "Digi Key" H 4900 3850 60  0001 C CNN "Supplier"
+F 8 "NXP Semiconductors" H 4900 3850 60  0001 C CNN "Manufacturer Name"
+F 9 "BAS321,115" H 4900 3850 60  0001 C CNN "Manufacturer Part Number"
+F 10 "568-6002-1-ND" H 4900 3850 60  0001 C CNN "Supplier Order number"
 	1    4900 3850
 	0    1    1    0   
 $EndComp
@@ -444,10 +447,14 @@ P 6250 1450
 F 0 "BT1" H 6368 1546 50  0000 L CNN
 F 1 "CR2032" H 6368 1455 50  0000 L CNN
 F 2 "SensorsUnleashed:BATT_CR2032_MPD" V 6250 1510 50  0001 C CNN
-F 3 "" V 6250 1510 50  0000 C CNN
-F 4 "HOLDER BATTERY SONY CR2032 SMD" H 6250 1450 60  0001 C CNN "Description"
-F 5 "MPD (Memory Protection Devices)" H 6250 1450 60  0001 C CNN "Manufacturer Name"
-F 6 "BC2032-F1" H 6250 1450 60  0001 C CNN "Manufacturer Part Number"
+F 3 "http://www.memoryprotectiondevices.com/datasheets/BC2032-F1-datasheet.pdf" V 6250 1510 50  0001 C CNN
+F 4 "Coin, 20.0mm" H 6250 1450 60  0001 C CNN "Characteristics"
+F 5 "Coin Cell, Holder" H 6250 1450 60  0001 C CNN "Description"
+F 6 "smd, Holder (Open)" H 6250 1450 60  0001 C CNN "Package ID"
+F 7 "Digi Key" H 6250 1450 60  0001 C CNN "Supplier"
+F 8 "MPD (Memory Protection Devices)" H 6250 1450 60  0001 C CNN "Manufacturer Name"
+F 9 "BC2032-F1" H 6250 1450 60  0001 C CNN "Manufacturer Part Number"
+F 10 "BC2032-F1-CT-ND" H 6250 1450 60  0001 C CNN "Supplier Order number"
 	1    6250 1450
 	1    0    0    -1  
 $EndComp
@@ -601,6 +608,8 @@ F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 2450 6400 50  0001 C CIN
 F 3 "http://www.atmel.com/images/atmel-8568-seeprom-at24c256c-datasheet.pdf" H 2550 5700 50  0001 C CNN
 F 4 "256K (32K x 8) eeprom, i2c" H 2350 6750 60  0001 C CNN "Characteristics"
 F 5 "8-SOIC" H 2450 6400 60  0001 C CNN "Package ID"
+F 6 "Aliexpress" H 2450 6400 60  0001 C CNN "Supplier"
+F 7 "https://www.aliexpress.com/item/Free-shipping-10pcs-lot-AT24C256C-SSHL-T-EEPROM-serial-AT24C256C-screen-2ECL-original-authentic/32699367011.html?spm=2114.13010608.0.0.Tp3XTh" H 2450 6400 60  0001 C CNN "Supplier Order number"
 	1    2450 6400
 	1    0    0    -1  
 $EndComp
